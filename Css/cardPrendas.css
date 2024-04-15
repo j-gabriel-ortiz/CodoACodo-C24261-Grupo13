@@ -1,0 +1,63 @@
+#renderRopa {
+    display: flex;
+    background-color: rgb(231, 231, 231);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    gap: 15px;
+}
+
+.card-ropa {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 1rem;
+    width: 350px;
+    padding: .5rem;
+    margin: .5rem;
+    box-shadow: 3px 3px 5px black;
+}
+
+.card-ropa:hover {
+    transform: scale(1.02);
+    transition: all .3s;
+}
+
+.card-ropa img {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    object-fit: contain;
+}
+
+.detalle-ropa {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    border-top: 2px solid black;
+    padding-top: .5rem;
+}
+
+.titulo-producto {
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.precio-producto {
+    font-size: 1.3rem;
+    text-align: right;
+}
+
+.btn-agregar-producto {
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    padding: .2rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: white;
+    border: 2px solid blueviolet;
+}
+
+.btn-agregar-producto:hover {
+    background-color: blueviolet;
+    color: white;
+    transition: all .5s ;
+}
