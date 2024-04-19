@@ -219,3 +219,27 @@ h1{
 p{
     font-weight: bold;
 }
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    nav {
+        padding: 5px;
+    }
+
+    nav ul {
+        display: block;
+        padding: 5px 0;
+    }
+
+    section {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    footer {
+        padding: 5px;
+    }
+}
