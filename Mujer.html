@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,33 +8,110 @@
 </head>
 <body>
     <header>
-        <a class="logo" href="Index.html"><img src="Imagenes/logoPage.png" width="60" weight="60"></a>    
+        <a class="logo" href="./Index.html"><img src="/Imagenes/logoPage.png" width="60" weight="60"></a>    
         <nav>
             <ul>
-                <li><a href="Index.html">Inicio</a></li>
-                <li><a href="Ropa.html">Ropa</a>
+                <li><a href="./Index.html">Inicio</a></li>
+                <li><a href="./Ropa.html">Ropa</a>
                     <ul>
-                        <li><a href="Hombre.html">Hombres</a></li>
-
-                        <li><a href="Mujer.html">Mujeres</a></li>
-
-                        <li><a href="Adolescentes.html">Adolescentes</a></li>
+                        <li><a href="./Hombre.html">Hombres</a></li>
+                        <li><a href="./Mujer.html">Mujeres</a></li>
+                        <li><a href="./Adolescentes.html">Adolescentes</a></li>
                     </ul>
                 </li>
-                <li><a href="Exposicion.html">Exposición</a></li>
-                
-                <li><a href="Contacto.html">Contácto</a></li>
+                <li><a href="./Exposicion.html">Exposición</a></li>
+                <li><a href="./Contacto.html">Contácto</a></li>
             </ul>
         </nav>
     </header>
 
     <div>
-        <h1>Nombre de la Tienda</h1>
-        <p>estas en Mujeres</p>
+        <h1>Mujeres</h1>
+    </div>
+
+    <div class="sidebar">
+        <h2>Filtrar por:</h2>
+        <form>
+            <label for="tipo">Producto:</label>
+            <select id="tipo">
+                <option value="Remeras">Remeras</option>
+                <option value="Pantalones">Pantalones</option>
+                <option value="Gorras">Gorras</option>
+            </select>
+            <label for="Talle">Talle:</label>
+            <select id="Talle">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+            </select>
+
+            <label for="colores">Color:</label>
+            <select id="colores">
+                <option value="rojo">Rojo</option>
+                <option value="azul">Azul</option>
+                <option value="verde">Verde</option>
+            </select>
+            <input type="submit" value="Filtrar">
+        </form>
+    </div>
+
+    <div class="product">
+        <img src="" alt="Producto 1">
+        <div class="price">$25.00</div>
+        <div class="description">
+            <p>Descripcion</p>
+        </div>
+    </div>
+
+        <div class="product">
+            <img src="" alt="Producto 2">
+            <div class="price">$25.00</div>
+            <div class="description">
+                <p>Descripcion</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="" alt="Producto 3">
+            <div class="price">$25.00</div>
+            <div class="description">
+                <p>Descripcion</p>
+            </div>
+        </div>
+    
+    <div class="product">
+        <img src="" alt="Producto 4">
+        <div class="price">$25.00</div>
+        <div class="description">
+            <p>Descripcion</p>
+        </div>
+    </div>
+    
+    <div class="product">
+        <img src="" alt="Producto 5">
+        <div class="price">$25.00</div>
+        <div class="description">
+            <p>Descripcion</p>
+        </div>
+    </div>
+    
+    <div class="product">
+        <img src="" alt="Producto 6">
+        <div class="price">$25.00</div>
+        <div class="description">
+            <p>Descripcion</p>
+        </div>
     </div>
 
     <footer class="main-footer">
         <p class="main-footer p">&copy; 2024 G.13 <a class="main-footer a" href="" target="_blank">Repositorio</a></p>
+        <div>
+            <ul class="social-list">
+                <li><a href="https://www.instagram.com/tu_cuenta_de_instagram"><img src="./Imagenes/instagram.png" alt="Instagram"></a></li>
+                <li><a href="https://www.facebook.com/tu_cuenta_de_facebook"><img src="./Imagenes/facebook.png" alt="Facebook"></a></li>
+                <li><a href="https://wa.me/tu_numero_de_whatsapp"><img src="./Imagenes/whatsapp.png" alt="WhatsApp"></a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
