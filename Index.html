@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda de Ropa</title>
     <link rel="stylesheet" href="Css\Index.css">
 </head>
+
 <body>
     <header>
         <div id="store-name">
-            <a class="logo" href="Index.html"><img src="Imagenes/logoPage.png" alt="logo store" width="60"></a>        
+            <a class="logo" href="Index.html"><img src="Imagenes/logoPage.png" alt="logo store" width="60"></a>
             <h1>Nombre de la Tienda</h1>
         </div>
-        <nav>
-            <ul>
-                <li><a href="Index.html">Inicio</a></li>
-                <li><a href="Ropa.html">Ropa</a>
-                    <ul>
-                        <li><a href="Hombre.html">Hombres</a></li>
-                        <li><a href="Mujer.html">Mujeres</a></li>
-                        <li><a href="Adolescentes.html">Adolescentes</a></li>
+        <nav class="navBar">
+            <ul class="menu">
+                <li class="indice"><a href="Index.html">Inicio</a></li>
+                <li class="menuRopa"><a href="Ropa.html">Ropa</a>
+                    <ul class="subMenu">
+                        <li class="navBar Hombre"><a href="Hombre.html">Hombres</a></li>
+                        <li class="navBar Mujer"><a href="Mujer.html">Mujeres</a></li>
+                        <li class="navBar Adolescentes"><a href="Adolescentes.html">Adolescentes</a></li>
                     </ul>
                 </li>
-                <li><a href="Exposicion.html">Exposición</a></li>
-                <li><a href="Contacto.html">Contácto</a></li>
+                <li class="expo"><a href="Exposicion.html">Exposición</a></li>
+                <li class="contact"><a href="Contacto.html">Contácto</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        
+
         <div class="carousel">
             <button>&#10503;</button>
             <button>&#10502;</button>
@@ -46,4 +48,5 @@
         <p class="main-footer p">&copy; 2024 G.13 <a class="main-footer a" href="" target="_blank">Repositorio</a></p>
     </footer>
 </body>
+
 </html>
