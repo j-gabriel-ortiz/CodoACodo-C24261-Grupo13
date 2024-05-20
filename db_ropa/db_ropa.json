@@ -1,0 +1,47 @@
+[
+  {
+    "id": "0",
+    "imagen": "../Imagenes/Remeras/RemeraAdolescente/Hombre/Remera-azul-new-york.jpg",
+    "title": "New York",
+    "color": "Gama Azul",
+    "precio": 999,
+    "talle": ["M", "L", "XL"],
+    "para": "hombre"
+  },
+  {
+    "id": 1,
+    "imagen": "../Imagenes/Remeras/RemeraAdolescente/Hombre/Remera-thor.jpg",
+    "title": "Thor",
+    "color": "negro",
+    "precio": 999,
+    "talle": ["M", "L", "XL", "XXL"],
+    "para": "hombre"
+  },
+  {
+    "id": 2,
+    "imagen": "../Imagenes/Remeras/RemeraAdolescente/Hombre/Remera-Argentina.webp",
+    "title": "Remera de Argentina",
+    "color": "celeste, blanca",
+    "precio": 9999,
+    "talle": ["L", "XL", "XXL"],
+    "para": "hombre"
+  },
+  {
+    "id": 3,
+    "imagen": "../Imagenes/Remeras/RemeraAdolescente/Hombre/Remera-blanca-negra-amarilla.jpg",
+    "title": "Onda Street",
+    "color": "blanca, negro, amarillo",
+    "precio": 999,
+    "talle": ["M", "L", "XL", "XXL"],
+    "para": "hombre"
+  },
+  {
+    "id": 4,
+    "imagen": "../Imagenes/Remeras/RemeraAdolescente/Hombre/Remera-negra.webp",
+    "title": "Remera Lisa Negra",
+    "color": "negro",
+    "precio": 999,
+    "talle": ["L", "XL", "XXL"],
+    "para": "hombre"
+  }
+]

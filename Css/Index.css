@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+/* Estilos para el body */
+body {
+    background-color: #e8e8e8;
+}
 
 
 /* Estilos para el encabezado */
@@ -109,7 +113,7 @@ body {
     width: 100vw;
     height: 70vh;
     position: relative;
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .carousel > ul {
@@ -145,7 +149,7 @@ body {
 }
 
 .carousel-btn.prev {
-    left: 1rem;
+    left: .5rem;
 }
 
 .carousel-btn.next {
@@ -179,4 +183,31 @@ body {
 
 .main-footer a {
     color: white;
+}
+
+@media screen and (max-width:870px) {
+    .carousel{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .carousel-btn{
+        position: static;
+        transform: translateY(0%);
+        background-color: rgba(0, 0, 0, .6);
+    }
+
+    .carousel-btn:hover, .carousel-btn:focus {
+        background-color: rgba(0, 0, 0, .6);
+    }
+
+}
+@media screen and (max-width:670px) {
+    .carousel {
+        height: 40vh;
+    }
+
+    .carousel-btn {
+        font-size: 2.5rem;
+    }
 }
