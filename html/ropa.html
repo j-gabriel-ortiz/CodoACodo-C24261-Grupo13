@@ -1,36 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tienda de Ropa</title>
-    <link rel="stylesheet" href="../css/Index.css">
-    <link rel="stylesheet" href="../css/cardPrendas.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../css/Index.css" />
+    <link rel="stylesheet" href="../css/cardPrendas.css" />
+  </head>
+  <body>
     <header>
-        <div id="store-name">
-            <a class="logo" href="Index.html"><img src="Imagenes/logoPage.png" alt="logo store" width="60"></a>        
-            <h1>Nombre de la Tienda</h1>
-        </div>   
-        <nav>
-            <ul>
-                <li><a href="Index.html">Inicio</a></li>
-                <li><a href="Ropa.html">Ropa</a></li>
-                <li><a href="Exposicion.html">Exposición</a></li>
-                <li><a href="Contacto.html">Contácto</a></li>
-            </ul>
-        </nav>
+      <div id="store-name">
+        <a class="logo" href="Index.html"
+          ><img src="../Imagenes/logoPage.png" alt="logo store" width="60"
+        /></a>
+        <h1>Nombre de la Tienda</h1>
+      </div>
+      <nav>
+        <ul>
+            <li><a href="./Index.html">Inicio</a></li>
+            <li><a href="./html/ropa.html">Ropa</a></li>
+            <li><a href="./html/contacto.html">Contácto</a></li>
+            <li><a href="./html/carrito.html">Carrito</a></li>
+        </ul>
+      </nav>
     </header>
-    <main>
-        <aside></aside>
-        <div id="renderRopa"></div>
-    </main>
-    
+    <main id="container-ropa">
+      <aside id="filtros-ropa">
+        <h3>Filtros de Ropa</h3>
 
-<footer class="main-footer">
-        <p class="main-footer p">&copy; 2024 G.13 <a class="main-footer a" href="" target="_blank">Repositorio</a></p>
+        <!-- Filtro tipo de ropa-->
+        <fieldset id="tipo-ropa">
+            <legend>Tipo de Ropa</legend>
+            <label>Adolecente <input class="filter-checkbox" type="checkbox" name="categoria-adolecente" value="adolecente"></label>
+            <label>Mujer <input class="filter-checkbox" type="checkbox" name="categoria-mujer" value="mujer"></label>
+            <label>Hombre <input class="filter-checkbox" type="checkbox" name="categoria-hombre" value="hombre"></label>
+        </fieldset>
+
+        <fieldset id="talle-ropa">
+            <legend>Talle</legend>
+            <label>Talle S<input class="filter-checkbox" type="checkbox" name="talle-S" value="S"></label>
+            <label>Talle M<input class="filter-checkbox" type="checkbox" name="talle-M" value="M"></label>
+            <label>Talle L<input class="filter-checkbox" type="checkbox" name="talle-L" value="L"></label>
+            <label>Talle XL<input class="filter-checkbox" type="checkbox" name="talle-XL" value="XL"></label>
+            <label>Talle XLL<input class="filter-checkbox" type="checkbox" name="talle-XXL" value="XXL"></label>
+        </fieldset>
+        
+        <!-- Filtro precio de ropa-->
+        <fieldset id="precio-ropa">
+            <legend>Precio</legend>
+            <label>Min <input type="number" name="precio-minimo" id="p-min"></label>
+            <label>Max <input type="number" name="precio-maximo" id="p-max"></label>
+            <button id="btn-buscar-precio">Buscar</button>
+        </fieldset>
+
+      </aside>
+      <div id="renderRopa"></div>
+    </main>
+
+    <footer class="main-footer">
+      <p class="main-footer p">
+        &copy; 2024 G.13
+        <a class="main-footer a" href="" target="_blank">Repositorio</a>
+      </p>
     </footer>
-<script src="../js/renderCardRopa.js"></script>
-</body>
+    <script src="../js/renderCardRopa.js"></script>
+  </body>
 </html>

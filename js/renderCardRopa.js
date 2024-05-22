@@ -1,17 +1,60 @@
 const renderRopa = document.getElementById("renderRopa");
+const filtrosCheckbox = document.querySelectorAll(".filter-checkbox");
+const precioMinimo = document.getElementById("p-min");
+const precioMaximo = document.getElementById("p-max");
+const btnPrecio = document.getElementById("btn-buscar-precio");
 
 fetch('../db_ropa/db_ropa.json')
-        .then(response => response.json())
-        .then(contenido => {
-            console.log(contenido);
-            mostrarProductos(contenido)
-        })
-        .catch(error => {
-            console.error('Error al cargar el archivo:', error);
-        });
+    .then(response => response.json())
+    .then(contenido => {
+        mostrarProductos(contenido)
+    })
 
+function aplicarFiltros() {
+fetch('../db_ropa/db_ropa.json')
+    .then(response => response.json())
+    .then(contenido => {
+        //Array con objetos filtrados
+        const arrayFilter = [];
+
+        contenido.forEach(prenda => {
+
+            //Toma de valores
+            const categoriaSeleccionados = Array.from(document.querySelectorAll(".filter-checkbox[name^='categoria-']:checked")).map(checkbox => checkbox.value);
+            const tallasSeleccionadas = Array.from(document.querySelectorAll(".filter-checkbox[name^='talle-']:checked")).map(checkbox => checkbox.value);
+            const pMinimo = precioMinimo.value === "" ? 0 : parseInt(precioMinimo.value);
+            const pMaximo = precioMaximo.value === "" ? 9999 : parseInt(precioMaximo.value);
+            
+            //Verificacione de condiciones
+            const cunpleCondiciones = () => {
+                const cumpleGenero = categoriaSeleccionados.length === 0 ? true : categoriaSeleccionados.includes(prenda.para);
+                const cumpleTalla = tallasSeleccionadas.length === 0 ? true : tallasSeleccionadas.some(talla => prenda.talle.includes(talla));
+                const cumplePrecio = prenda.precio >= pMinimo && prenda.precio <= pMaximo;
+                return (cumpleGenero && cumpleTalla && cumplePrecio)
+            }
+
+            if(cunpleCondiciones()) {
+                if(prenda.length !== 0) {
+                    arrayFilter.push(prenda);
+                }
+            }
+            console.log(arrayFilter);
+            mostrarProductos(arrayFilter);
+        });
+    })
+    .catch(error => {
+        console.error('Error al cargar el archivo:', error);
+    });
+}
+
+filtrosCheckbox.forEach(checkbox => {
+    checkbox.addEventListener("change", aplicarFiltros);
+});
+
+btnPrecio.addEventListener("click", aplicarFiltros)
 
 function mostrarProductos(dbRopa) {
+    renderRopa.textContent = "";
     dbRopa.forEach(prenda => {
         //Creacion de elementos
         // contenedor card
