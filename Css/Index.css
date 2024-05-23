@@ -34,7 +34,16 @@ h1 {
 }
 
 /* Estilos para la navegación */
-nav ul {
+/* Estilos para la navegación */
+
+.navBar {
+  margin-left: 70px;
+  margin-top: -55px;
+  position: relative;
+  z-index: 2;
+}
+
+.navBar .menu {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -42,14 +51,14 @@ nav ul {
   justify-content: flex-end;
 }
 
-nav ul li {
+.navBar .menu li {
   display: inline-block;
   position: relative;
   margin-right: 15px;
   margin-left: 15px;
 }
 
-nav ul li a {
+.navBar .menu li a {
   color: #fff;
   text-decoration: none;
   display: block;
@@ -59,46 +68,38 @@ nav ul li a {
 }
 
 /* Cambiar color del enlace y eliminar subrayado al pasar el mouse */
-nav ul li a:hover {
+.navBar .menu li a:hover {
   color: rgb(0, 60, 255);
   text-decoration: none;
 }
 
-nav ul ul {
-  display: none;
-  position: absolute;
-  top: 100%; 
-  left: 0; 
-  background-color: #0a0a0a;
-  padding: 0;
-}
-
-nav ul ul li {
-  display: inline-block;
-  width: 100%;
-}
-
-nav ul ul li a {
-  padding: 10px;
-}
-
-nav ul li:hover > ul {
+.navBar .menu .menuRopa:hover {
   display: block;
 }
 
 /* Estilos para subniveles de navegación */
-nav ul ul ul {
-  top: 0;
-  left: 100%;
+.navBar .menu .subMenu li {
+  display: inline-block;
+  width: 100%;
 }
 
-nav ul ul ul li {
+.navBar .menu .subMenu li a {
+  padding: 10px;
+}
+
+.navBar .menu .subMenu .navBar.Hombre,
+.navBar .menu .subMenu .navBar.Mujer,
+.navBar .menu .subMenu .navBar.Adolescentes {
   display: block;
 }
 
-nav ul ul ul li a {
-  padding: 10px;
+/* Estilos para el elemento de contacto */
+.navBar .menu .contact {
+  /* Estilos para el elemento de contacto */
 }
+
+/* Estilos adicionales si los hay */
+
 
 /* Estilos para el cuerpo */
 body {
