@@ -1,44 +1,85 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tienda de Ropa</title>
-    <link rel="stylesheet" href="css\Index.css">
+    <link rel="stylesheet" href="Css\Index.css">
 </head>
+
 <body>
     <header>
         <div id="store-name">
-            <a class="logo" href="Index.html"><img src="Imagenes/logoPage.png" alt="logo store" width="60"></a>        
-            <h1>Nombre de la Tienda</h1>
+            <a class="logo" href="Index.html"><img src="Imagenes/logoPage.png" alt="logo store" width="60" /></a>
         </div>
         <nav>
             <ul>
-                <li><a href="./Index.html">Inicio</a></li>
-                <li><a href="./html/ropa.html">Ropa</a></li>
-                <li><a href="./html/contacto.html">Contácto</a></li>
-                <li><a href="./html/carrito.html">Carrito</a></li>
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="Ropa.html">Ropa</a>
+                    <ul>
+                        <li><a href="Hombre.html">Hombres</a></li>
+                        <li><a href="Mujer.html">Mujeres</a></li>
+                        <li><a href="Adolescentes.html">Adolescentes</a></li>
+                    </ul>
+                </li>
+                <li><a href="Exposicion.html">Exposición</a></li>
+                <li><a href="Contacto.html">Contácto</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="carousel" data-carousel>
-            <button class="carousel-btn prev" data-carousel-button="prev">&#10502;</button>
-            <ul data-slides>
-                <li class="slide" data-active><img src="Imagenes/Carousel/a-yellow-zip-up-hoodie-over-a-sleek-yellow-crop-top-only-the-clothe.jpeg" alt="Mujer con campera amrilla y vaqueros"></li>
-                <li class="slide"><img src="Imagenes/Carousel/black-joggers-with-electric-blue-accents-perfect-for-street-style-workouts.jpeg" alt="Hombre con conjunto deportivo azul y negro"></li>
-                <li class="slide"><img src="Imagenes/Carousel/black-sportswear-set-only-the-clothe (1).jpeg" alt="Conjunto deportivo negro"></li>
-                <li class="slide"><img src="Imagenes/Carousel/black-sportswear-set-only-the-clothe.jpeg" alt="Mujer con conjunto deportivo negro"></li>
-                <li class="slide"><img src="Imagenes/Carousel/purple-sportswear-set-only-the-clothe.jpeg" alt="Conjunto deportivo morado y blanco"></li>
+        
+        <div class="carousel">
+            <button>&#10503;</button>
+            <button>&#10502;</button>
+            <ul>
+                <li class="slide"><img src="" alt=""></li>
+                <li class="slide"><img src="" alt=""></li>
+                <li class="slide"><img src="" alt=""></li>
             </ul>
-            <button class="carousel-btn next" data-carousel-button="next">&#10503;</button>
+
         </div>
-        <p>Inicio</p>
-    </main>
+    
+        <div class="product">
+            <img src="../Imagenes/Remeras/Remera Hombre/Gorras/Gorras 2.png" alt="Producto 5">
+            <div class="price">$25.00</div>
+            <div class="description">
+                <p>Color unico</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="./Imagenes/Exposicion de Ropa/imagen1.jpg" alt="Producto 6">
+            <div class="price">$25.00</div>
+            <div class="description">
+                <p>Conjunto</p>
+            </div>
+        </div>
+    </section>
 
     <footer class="main-footer">
-        <p class="main-footer p">&copy; 2024 G.13 <a class="main-footer a" href="" target="_blank">Repositorio</a></p>
+        <p class="main-footer p">
+            &copy; 2024 G.13
+            <a class="main-footer a" href="" target="_blank">Repositorio</a>
+        </p>
+        <div>
+            <ul class="social-list">
+                <li>
+                    <a href="https://www.instagram.com/tu_cuenta_de_instagram" target="_blank"><img
+                            src="./Imagenes/instagram.svg" alt="Instagram" /></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/tu_cuenta_de_facebook" target="_blank"><img
+                            src="./Imagenes/facebook.svg" alt="Facebook" /></a>
+                </li>
+                <li>
+                    <a href="https://wa.me/tu_numero_de_whatsapp" target="_blank"><img src="./Imagenes/whatsapp.svg"
+                            alt="WhatsApp" /></a>
+                </li>
+            </ul>
+        </div>
     </footer>
-<script src="js/script-index.js"></script>
 </body>
+
 </html>
