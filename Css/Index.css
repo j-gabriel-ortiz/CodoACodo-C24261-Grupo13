@@ -1,3 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos para el body */
+body {
+  background-color: #e8e8e8;
+}
+
+
+/* Estilos para el encabezado */
+header {
+  background-color: #0e0d0d; 
+  color: #fff;
+  padding: 10px 0;
+}
+
 #store-name {
   display: flex;
   justify-content: flex-start;
@@ -6,114 +25,87 @@
   max-width: 700px;
 }
 
-/* Estilos para el encabezado */
-header {
-  background-color: #0e0d0d;
-  color: #F1E9E5;
-  padding: 10px 0;
+h1 {
+  margin-left: 50px;
 }
-
-/* Estilos para el cuerpo */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #F1E9E5;
-  margin: 0;
-  padding: 0;
-}
-
 /*Logo*/
-.logo {
+.logo{
   margin-left: 10px;
 }
 
-h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 22px;
-  color: black;
-  margin-left: 50px;
-}
-
-/* Estilos para el cuerpo */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #F1E9E5;
+/* Estilos para la navegación */
+nav ul {
+  list-style-type: none;
   margin: 0;
   padding: 0;
-}
-
-/* Estilos del navbar */
-.navBar {
-  margin-left: 70px;
-  margin-top: -55px;
-}
-
-.navBar .menu {
-  list-style-type: none;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-  margin: 0;
-  padding: 10px 20px;
+  justify-content: flex-end;
 }
 
-.navBar .menu li {
+nav ul li {
   display: inline-block;
   position: relative;
   margin-right: 15px;
   margin-left: 15px;
 }
 
-.navBar .menu li a {
+nav ul li a {
   color: #fff;
   text-decoration: none;
   display: block;
   padding: 10px;
-  padding: 15px;
-  font-size: 18px;
+  padding: 15px; 
+  font-size: 18px; 
 }
 
 /* Cambiar color del enlace y eliminar subrayado al pasar el mouse */
-.navBar .menu li a:hover {
-  color: rgb(241, 233, 229);
+nav ul li a:hover {
+  color: rgb(0, 60, 255);
   text-decoration: none;
 }
 
-.navBar .subMenu {
+nav ul ul {
   display: none;
   position: absolute;
-  top: 100%;
-  left: 0;
+  top: 100%; 
+  left: 0; 
   background-color: #0a0a0a;
   padding: 0;
 }
 
-.navBar .subMenu li {
+nav ul ul li {
   display: inline-block;
   width: 100%;
 }
 
-.navBar .subMenu li a {
+nav ul ul li a {
   padding: 10px;
 }
 
-.navBar .menuRopa:hover>.subMenu {
+nav ul li:hover > ul {
   display: block;
 }
 
 /* Estilos para subniveles de navegación */
-.navBar .subMenu .subMenu {
+nav ul ul ul {
   top: 0;
   left: 100%;
 }
 
-.navBar .subMenu .subMenu li {
+nav ul ul ul li {
   display: block;
 }
 
-.navBar .subMenu .subMenu li a {
+nav ul ul ul li a {
   padding: 10px;
+}
+
+/* Estilos para el cuerpo */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
 }
 
 /* final de la navbar */
