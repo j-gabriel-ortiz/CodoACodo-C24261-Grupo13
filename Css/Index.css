@@ -1,6 +1,6 @@
 /* Estilos para el encabezado */
 header {
-    background-color: #0e0d0d; 
+    background-color: #0e0d0d;
     color: #F1E9E5;
     padding: 10px 0;
 }
@@ -14,12 +14,11 @@ body {
 }
 
 /*Logo*/
-.logo{
+.logo {
     margin-left: 10px;
 }
 
-/* Estilos para la navegación */
-/* Estilos para la navegación */
+/* Estilos del navbar */
 .navBar {
     margin-left: 70px;
     margin-top: -55px;
@@ -48,21 +47,21 @@ body {
     text-decoration: none;
     display: block;
     padding: 10px;
-    padding: 15px; 
-    font-size: 18px; 
+    padding: 15px;
+    font-size: 18px;
 }
 
 /* Cambiar color del enlace y eliminar subrayado al pasar el mouse */
 .navBar .menu li a:hover {
-    color: rgb(241,233,229);
+    color: rgb(241, 233, 229);
     text-decoration: none;
 }
 
 .navBar .subMenu {
     display: none;
     position: absolute;
-    top: 100%; 
-    left: 0; 
+    top: 100%;
+    left: 0;
     background-color: #0a0a0a;
     padding: 0;
 }
@@ -76,7 +75,7 @@ body {
     padding: 10px;
 }
 
-.navBar .menuRopa:hover > .subMenu {
+.navBar .menuRopa:hover>.subMenu {
     display: block;
 }
 
@@ -94,10 +93,13 @@ body {
     padding: 10px;
 }
 
+/* final de la navbar */
 
+/* Estilos para el sidebar */
 .sidebar {
     float: left;
-    width: 200px; /* Ancho de la barra lateral */
+    width: 200px;
+    /* Ancho de la barra lateral */
     padding: 20px;
     background-color: #000000;
     color: white;
@@ -116,15 +118,22 @@ body {
     margin-bottom: 5px;
 }
 
-.sidebar select, .sidebar input[type="submit"] {
+.sidebar select,
+.sidebar input[type="submit"] {
     width: 100%;
     margin-bottom: 10px;
 }
 
+/* Final del estilo para el sidebar */
+
+
+/* Estilos para el contenido principal */
 .main-content {
-    margin-left: 220px; /* Asegúrate de ajustar esto para dejar espacio para la barra lateral */
+    margin-left: 220px;
+    /* Asegúrate de ajustar esto para dejar espacio para la barra lateral */
     padding: 20px;
 }
+
 /* Estilos para el pie de página */
 .main-footer {
     background: #0a0a0a;
@@ -141,23 +150,45 @@ body {
 .main-footer a {
     color: white;
 }
+
+/* Estilos para los productos */
 .product {
     text-align: center;
     margin-bottom: 20px;
 }
+
 .product img {
     width: 200px;
     height: auto;
 }
+
 .product .price {
     font-weight: bold;
 }
+
 .product .description {
     color: #666;
 }
-h1{
-    font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: black;
+
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
 }
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.description {
+    color: #666;
+}
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -183,6 +214,16 @@ h1{
 .description {
     color: #666;
 }
+
+
+/* Final de estilos para los productos */
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: black;
+}
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -190,42 +231,7 @@ h1{
     justify-content: center;
 }
 
-.product {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
-}
 
-.product img {
-    max-width: 100%;
-    height: auto;
-}
-
-.price {
-    font-weight: bold;
-}
-
-.description {
-    color: #666;
-}
-.social-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.social-list li {
-    display: inline-block;
-    margin-right: 10px; /* Espacio entre los íconos */
-}
-
-.social-list img {
-    width: 30px; /* Tamaño de los logotipos */
-    height: auto;
-}
-p{
-    font-weight: bold;
-}
 /* Media queries para dispositivos móviles */
 @media (max-width: 768px) {
     header {
@@ -249,4 +255,46 @@ p{
     footer {
         padding: 5px;
     }
+}
+
+/* Estilos para el pie de página */
+.main-footer {
+    background-color: #333;
+    /* Fondo oscuro para el footer */
+    color: white;
+    /* Texto blanco */
+    padding: 20px;
+    text-align: center;
+}
+
+.main-footer a {
+    color: #1e90ff;
+    /* Color de los enlaces */
+}
+
+.social-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    /* Espacio entre los iconos */
+}
+
+.social-list li {
+    display: inline-block;
+}
+
+.social-list a {
+    display: inline-block;
+    padding: 10px;
+    background-color: white;
+    /* Fondo blanco para los iconos */
+    border-radius: 40%;
+    /* Bordes redondeados */
+}
+
+.social-list img {
+    width: 30px;
+    height: 30px;
 }

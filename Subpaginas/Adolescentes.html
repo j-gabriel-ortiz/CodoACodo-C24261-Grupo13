@@ -5,18 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda de Ropa</title>
-    <link rel="stylesheet" href="Css\Index.css">
+    <link rel="stylesheet" href="../Css/Index.css">
+
 </head>
 
 <body>
     <header>
         <div id="store-name">
-            <a class="logo" href="Index.html"><img src="Imagenes/logoPage.png" alt="logo store" width="60"></a>
-            <h1>Nombre de la Tienda</h1>
+            <a class="logo" href="../Index.html"><img src="../Imagenes/logoPage.png" alt="logo store" width="60"></a>
         </div>
         <nav class="navBar">
             <ul class="menu">
-                <li class="indice"><a href="Index.html">Inicio</a></li>
+                <li class="indice"><a href="../Index.html">Inicio</a></li>
                 <li class="menuRopa"><a href="Ropa.html">Ropa</a>
                     <ul class="subMenu">
                         <li class="navBar Hombre"><a href="Hombre.html">Hombres</a></li>
@@ -31,7 +31,7 @@
     </header>
 
     <div>
-        <h1>Hombres</h1>
+        <h1>Adolescentes</h1>
     </div>
 
     <div class="sidebar">
@@ -42,6 +42,10 @@
                 <option value="Remeras">Remeras</option>
                 <option value="Pantalones">Pantalones</option>
                 <option value="Gorras">Gorras</option>
+            </select>
+            <select id="Genero">
+                <option value="Varon">Hombre</option>
+                <option value="Mujer">Mujer</option>
             </select>
             <label for="Talle">Talle:</label>
             <select id="Talle">
@@ -62,7 +66,7 @@
 
     <div class="main-content gallery">
         <div class="product">
-            <img src="../Codo a Codo/VSC/Pag de tienda modelo simple/Imagenes/Remeras/Remera Hombre/1reme hombre.webp"
+            <img src="../Imagenes/Remeras/Remera Adolescente/Hombre/remeadolescente1.jpg"
                 alt="Producto 1">
             <div class="price">$20.00</div>
             <div class="description">
@@ -71,7 +75,7 @@
         </div>
 
         <div class="product">
-            <img src="../Codo a Codo/VSC/Pag de tienda modelo simple/Imagenes/Remeras/Remera Hombre/2reme hombre.webp"
+            <img src="../Imagenes/Remeras/Remera Adolescente/Hombre/remeadolescente2.jpg"
                 alt="Producto 2">
             <div class="price">$30.00</div>
             <div class="description">
@@ -80,17 +84,16 @@
         </div>
 
         <div class="product">
-            <img src="../Codo a Codo/VSC/Pag de tienda modelo simple/Imagenes/Remeras/Remera Hombre/3reme hombre.webp"
+            <img src="../Imagenes/Remeras/Remera Adolescente/Hombre/remeadolescente3.jpg"
                 alt="Producto 3">
             <div class="price">$25.00</div>
             <div class="description">
                 <p>Remera de algodon Talles: S - M -L - XL Color: Rojo</p>
             </div>
         </div>
-    </div>
 
     <div class="product">
-        <img src="../Pag de tienda modelo simple/Imagenes/Gorras/Gorra 1.webp" alt="Producto 4">
+        <img src="../Imagenes/Remeras/Remera Adolescente/Mujer/1remeadolescente.png" alt="Producto 4">
         <div class="price">$25.00</div>
         <div class="description">
             <p>Gorra color unico</p>
@@ -98,7 +101,7 @@
     </div>
 
     <div class="product">
-        <img src="../Pag de tienda modelo simple/Imagenes/Gorras/Gorra 2.jpg" alt="Producto 5">
+        <img src="../Imagenes/Remeras/Remera Adolescente/Mujer/2remeadolescente.webp" alt="Producto 5">
         <div class="price">$25.00</div>
         <div class="description">
             <p>Color unico</p>
@@ -106,22 +109,24 @@
     </div>
 
     <div class="product">
-        <img src="../Pag de tienda modelo simple/Imagenes/Gorras/Gorra 3.webp" alt="Producto 6">
+        <img src="../Imagenes/Remeras/Remera Adolescente/Mujer/3remeadolescente.jpg" alt="Producto 6">
         <div class="price">$25.00</div>
         <div class="description">
             <p>Gorra color unico</p>
         </div>
     </div>
 
+</div>
+
     <footer class="main-footer">
         <p class="main-footer p">&copy; 2024 G.13 <a class="main-footer a" href="" target="_blank">Repositorio</a></p>
         <div>
             <ul class="social-list">
-                <li><a href="https://www.instagram.com/tu_cuenta_de_instagram"><img src="./Imagenes/instagram.png"
+                <li><a href="https://www.instagram.com/tu_cuenta_de_instagram" target="_blank"><img src="../Imagenes/instagram.svg"
                             alt="Instagram"></a></li>
-                <li><a href="https://www.facebook.com/tu_cuenta_de_facebook"><img src="./Imagenes/facebook.png"
+                <li><a href="https://www.facebook.com/tu_cuenta_de_facebook" target="_blank"><img src="../Imagenes/facebook.svg"
                             alt="Facebook"></a></li>
-                <li><a href="https://wa.me/tu_numero_de_whatsapp"><img src="./Imagenes/whatsapp.png" alt="WhatsApp"></a>
+                <li><a href="https://wa.me/tu_numero_de_whatsapp" target="_blank"><img src="../Imagenes/whatsapp.svg" alt="WhatsApp"></a>
                 </li>
             </ul>
         </div>
