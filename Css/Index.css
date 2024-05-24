@@ -491,3 +491,28 @@ h1 {
   .button-82-pushable:focus:not(:focus-visible) {
     outline: none;
   }
+  
+  /* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+  /* Estilos para el encabezado en dispositivos móviles */
+  header {
+      /* Ajustes para pantallas pequeñas */
+  }
+
+  /* Estilos para el navbar en dispositivos móviles */
+  .navBar {
+      /* Ajustes para pantallas pequeñas */
+  }
+
+  /* Otros estilos para dispositivos móviles */
+}
+
+/* Media queries para tabletas */
+@media (max-width: 1024px) {
+  /* Estilos para tabletas */
+}
+
+/* Media queries para pantallas grandes */
+@media (min-width: 1200px) {
+  /* Estilos para pantallas grandes */
+}
