@@ -1,0 +1,127 @@
+#renderRopa {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(231, 231, 231);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    gap: 15px;
+    height: 100vh;
+    width: 100%;
+    padding: 10px;
+}
+
+.card-ropa {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 1rem;
+    width: 250px;
+    max-height: 330px;
+    height: 100%;
+    padding: .5rem;
+    margin: .5rem;
+    box-shadow: 3px 3px 5px black;
+}
+
+.card-ropa:hover {
+    transform: scale(1.02);
+    transition: all .3s;
+}
+
+.card-ropa img {
+    display: flex;
+    justify-content: center;
+    max-width: 250px;
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+}
+
+.detalle-ropa {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    border-top: 2px solid black;
+    padding-top: .5rem;
+}
+
+.titulo-producto {
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.precio-producto {
+    font-size: 1.1rem;
+    text-align: right;
+}
+
+.btn-agregar-producto {
+    border-radius: 1rem;
+    font-size: 1rem;
+    padding: .2rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: white;
+    border: 2px solid blueviolet;
+}
+
+.btn-agregar-producto:hover, #precio-ropa button:hover {
+    background-color: blueviolet;
+    color: white;
+    transition: all .5s ;
+}
+
+/* Filtros */
+
+#container-ropa {
+    display: flex;
+}
+
+#filtros-ropa {
+    max-width: 250px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+    font-size: 1.1rem;
+}
+
+#filtros-ropa legend {
+    padding: 0 10px;
+}
+
+#tipo-ropa, #precio-ropa, #talle-ropa {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    padding: 10px;
+    gap: 10px;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+#tipo-ropa label, #precio-ropa label, #talle-ropa label{
+    position: relative;
+    left: 0;
+}
+
+#tipo-ropa input, #precio-ropa input, #talle-ropa input {
+    position: absolute;
+    right: 0px;
+}
+
+#tipo-ropa input, #talle-ropa input {
+    transform: translateY(25%);
+}
+
+#precio-ropa input {
+    width: 100px;
+}
+
+#precio-ropa button {
+    background-color: white;
+    border: 2px solid blueviolet;
+    border-radius: 10px;
+    font-size: 1rem;
+}

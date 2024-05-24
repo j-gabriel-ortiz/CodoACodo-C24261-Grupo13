@@ -1,0 +1,75 @@
+[
+  {
+    "id": 0,
+    "imagen": "../Imagenes/Remeras/RemeraAdolescente/Hombre/Remera-azul-new-york.jpg",
+    "title": "New York",
+    "precio": 600,
+    "talle": ["S", "M", "L", "XL"],
+    "para": "hombre"
+  },
+  {
+    "id": 1,
+    "imagen": "../Imagenes/Remeras/RemeraAdolescente/Hombre/Remera-thor.jpg",
+    "title": "Thor",
+    "precio": 750,
+    "talle": ["M", "L", "XL", "XXL"],
+    "para": "hombre"
+  },
+  {
+    "id": 2,
+    "imagen": "../Imagenes/Remeras/RemeraAdolescente/Hombre/Remera-Argentina.webp",
+    "title": "Remera de Argentina",
+    "precio": 1000,
+    "talle": ["L", "XL", "XXL"],
+    "para": "hombre"
+  },
+  {
+    "id": 3,
+    "imagen": "../Imagenes/Remeras/RemeraAdolescente/Hombre/Remera-blanca-negra-amarilla.jpg",
+    "title": "Onda Street",
+    "color": "blanca, negro, amarillo",
+    "precio": 500,
+    "talle": ["M", "L", "XL", "XXL"],
+    "para": "hombre"
+  },
+  {
+    "id": 4,
+    "imagen": "../Imagenes/Remeras/RemeraAdolescente/Hombre/Remera-negra.webp",
+    "title": "Remera Lisa Negra",
+    "precio": 350,
+    "talle": ["S", "M", "L", "XL", "XXL"],
+    "para": "hombre"
+  },
+  {
+    "id": 5,
+    "imagen": "../Imagenes/Remeras/RemeraAdolescente/Mujer/calavera-con-flores.png",
+    "title": "Dream Alive",
+    "precio": 500,
+    "talle": ["S", "M", "L"],
+    "para": "mujer"
+  },
+  {
+    "id": 6,
+    "imagen": "../Imagenes/Remeras/RemeraAdolescente/Mujer/lilo.jpg",
+    "title": "Lilo",
+    "precio": 600,
+    "talle": ["S", "M", "L", "XL"],
+    "para": "mujer"
+  },
+  {
+    "id": 7,
+    "imagen": "../Imagenes/Remeras/RemeraAdolescente/Mujer/calavera-con-mariposas.webp",
+    "title": "Pink Skull",
+    "precio": 750,
+    "talle": ["S", "M", "L"],
+    "para": "mujer"
+  },
+  {
+    "id": 8,
+    "imagen": "../Imagenes/Remeras/RemeraAdolescente/Mujer/its-girl-things.jpg",
+    "title": "Girl Things.jpg",
+    "precio": 1000,
+    "talle": ["S", "M", "L", "XL"],
+    "para": "mujer"
+  }
+]
