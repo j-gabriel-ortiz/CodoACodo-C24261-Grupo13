@@ -466,3 +466,19 @@ body {
   width: 30px;
   height: 30px;
 }
+.map-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+/*.map {
+  width: calc(50% - 10px); 
+  height: 350px; 
+}*/
+
+
+
+/*.map-container div {
+  padding: 0 1px; 
+}*/
