@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tienda de Ropa</title>
+  <link rel="stylesheet" href="../css/Index.css" />
+  <link rel="stylesheet" href="../css/cardPrendas.css" />
+</head>
+
+<body>
+  <header>
+    <div id="store-name">
+      <a class="logo" href="../Index.html"><img src="../Imagenes/logoPage.png" alt="logo store" width="60" /></a>
+      <h1>TIENDA GRUPO 3E</h1>
+    </div>
+
+    <nav class="navBar">
+      <ul class="menu">
+        <li class="indice"><a href="../Index.html">Inicio</a></li>
+        <li class="menuRopa"><a href="../html/ropa.html">Ropa</a></li>
+        <li class="contact"><a href="../html/contacto.html">Contacto</a></li>
+        <li><a href="../html/carrito.html">Carrito</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="container">
+    <marquee behavior="scroll" direction="left" scrollamount="7">
+      <h1>¡Gracias por comprar en Tienda Grupo 3E!</h1>
+    </marquee>
+    <h2>Encontranos en las siguientes sucursales:</h2>
+    <br>
+    <div class="map-container">
+      <div>
+        <h3>Avenida Corrientes 1235</h3>
+        <div class="google-maps">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.017745718796!2d-58.38668882445826!3d-34.603712772954275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac5e5eec273%3A0x3069eb107d751af4!2sAv.%20Corrientes%201235%2C%20C1043%20San%20Nicolas%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1716508140952!5m2!1sen!2sar"
+            width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      <div>
+        <h3>Avenida Santa Fe 4528</h3>
+        <div class="google-maps">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.982794601026!2d-58.42486319999999!3d-34.5793019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59b3ea12b09%3A0x42878d8cdf05a597!2sAv.%20Sta.%20Fe%204528%2C%20C1425BHU%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1716507808053!5m2!1sen!2sar"
+            width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact-list">
+    <h3>¿Tienes alguna pregunta o comentario? ¡Contáctanos!</h3> <br>
+    <div id="contact-redes">
+    <div>
+      WhatsApp: +54 9 (11)96451237
+    </div><br>
+    <div>
+      Instagram: <a href="https://www.instagram.com">@TiendaGrupo3E</a>
+    </div><br>
+
+    <div>
+      Facebook: <a href="https://www.facebook.com">Tienda Grupo 3E</a>
+    </div><br>
+
+  </div>
+    <h3>Cualquier otra consulta escribinos:</h3>
+    <br>
+    <form action="enviar.php" method="POST">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+    
+      <div>
+      <label id="mensaje" for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Escriba su mensaje..."></textarea>
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+  </section>
+  <footer class="main-footer">
+    <p>
+      &copy; 2024 G.13
+      <a href="" target="_blank">Repositorio</a>
+    </p>
+    <div>
+      <ul class="social-list">
+        <li>
+          <a href="https://www.instagram.com/tu_cuenta_de_instagram" target="_blank"><img src="../Imagenes/instagram.svg" alt="Instagram" /></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/tu_cuenta_de_facebook" target="_blank"><img src="../Imagenes/facebook.svg" alt="Facebook" /></a>
+        </li>
+        <li>
+          <a href="https://wa.me/tu_numero_de_whatsapp" target="_blank"><img src="../Imagenes/whatsapp.svg" alt="WhatsApp" /></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tienda de Ropa</title>
+  <link rel="stylesheet" href="../css/Index.css" />
+  <link rel="stylesheet" href="../css/cardPrendas.css" />
+</head>
+
+<body>
+  <header>
+    <div id="store-name">
+      <a class="logo" href="../Index.html"><img src="../Imagenes/logoPage.png" alt="logo store" width="60" /></a>
+      <h1>TIENDA GRUPO 3E</h1>
+    </div>
+
+    <nav class="navBar">
+      <ul class="menu">
+        <li class="indice"><a href="../Index.html">Inicio</a></li>
+        <li class="menuRopa"><a href="../html/ropa.html">Ropa</a>
+        </li>
+        <li class="contact"><a href="../html/contacto.html">Contacto</a></li>
+        <li><a href="../html/carrito.html">Carrito</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="container-ropa">
+    <aside id="filtros-ropa">
+      <h3>Filtros de Ropa</h3>
+
+      <!-- Filtro tipo de ropa-->
+      <fieldset id="tipo-ropa">
+        <legend>Tipo de Ropa</legend>
+        <label>Adolescente <input class="filter-checkbox" type="checkbox" name="categoria-adolecente"
+            value="adolecente"></label>
+        <label>Mujer <input class="filter-checkbox" type="checkbox" name="categoria-mujer" value="mujer"></label>
+        <label>Hombre <input class="filter-checkbox" type="checkbox" name="categoria-hombre" value="hombre"></label>
+      </fieldset>
+
+      <fieldset id="talle-ropa">
+        <legend>Talle</legend>
+        <label>Talle S<input class="filter-checkbox" type="checkbox" name="talle-S" value="S"></label>
+        <label>Talle M<input class="filter-checkbox" type="checkbox" name="talle-M" value="M"></label>
+        <label>Talle L<input class="filter-checkbox" type="checkbox" name="talle-L" value="L"></label>
+        <label>Talle XL<input class="filter-checkbox" type="checkbox" name="talle-XL" value="XL"></label>
+        <label>Talle XXL<input class="filter-checkbox" type="checkbox" name="talle-XXL" value="XXL"></label>
+      </fieldset>
+
+      <!-- Filtro precio de ropa-->
+      <fieldset id="precio-ropa">
+        <legend>Precio</legend>
+        <label>Min <input type="number" name="precio-minimo" id="p-min"></label>
+        <label>Max <input type="number" name="precio-maximo" id="p-max"></label>
+        <button id="btn-buscar-precio">Buscar</button>
+      </fieldset>
+    </aside>
+    <div id="renderRopa"></div>
+  </main>
+
+  <footer class="main-footer">
+    <p class="main-footer p">
+      &copy; 2024 G.13
+      <a class="main-footer a" href="" target="_blank">Repositorio</a>
+    </p>
+    <div>
+      <ul class="social-list">
+        <li>
+          <a href="https://www.instagram.com/tu_cuenta_de_instagram" target="_blank"><img
+              src="../Imagenes/instagram.svg" alt="Instagram" /></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/tu_cuenta_de_facebook" target="_blank"><img src="../Imagenes/facebook.svg"
+              alt="Facebook" /></a>
+        </li>
+        <li>
+          <a href="https://wa.me/tu_numero_de_whatsapp" target="_blank"><img src="../Imagenes/whatsapp.svg"
+              alt="WhatsApp" /></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <script src="../js/renderCardRopa.js"></script>
+</body>
+
+</html>
