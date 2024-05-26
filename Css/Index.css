@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+/*esto es para que un rem equivalga a 10px*/
+/*html {
+  font-size: 62.5%;
+}*/
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
@@ -562,4 +567,34 @@ footer .social-list img {
   border-radius: 10px;
   font-size: 1rem;
 }
-*/
+
+.h1carro {
+  text-align: center;
+  font-size: 5rem;
+  cursor: pointer;
+  transition: .5s linear;
+  color: transparent;
+  -webkit-text-stroke: 2px blueviolet;
+  background-image: linear-gradient(to left, blueviolet, 
+  rgb(139, 22, 249), rgb(183, 175, 175), rgb(248, 248, 244) );
+  -webkit-background-clip: text;
+  animation: move 30s linear infinite;
+}
+@keyframes move {
+  100%{
+    background-position: 2000px 0;
+  }
+}
+
+.h1carro:hover {
+  color: blueviolet;
+  text-shadow: 0 0 10px rgb(132, 6, 250);
+  text-shadow: 0 0 20px rgb(132, 6, 250);
+  text-shadow: 0 0 40px rgb(132, 6, 250);
+  text-shadow: 0 0 80px rgb(132, 6, 250);
+  text-shadow: 0 0 160px rgb(132, 6, 250);
+  text-shadow: 0 0 320px rgb(132, 6, 250);
+}
+.h2carro {
+
+}
