@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+/*esto es para que un rem equivalga a 10px*/
+/*html {
+  font-size: 62.5%;
+}*/
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
@@ -562,4 +567,88 @@ footer .social-list img {
   border-radius: 10px;
   font-size: 1rem;
 }
-*/
+
+/*.h1carro {
+  text-align: center;
+  font-size: 5rem;
+  cursor: pointer;
+  transition: .5s linear;
+  color: transparent;
+  -webkit-text-stroke: 2px blueviolet;
+  background-image: linear-gradient(to left, blueviolet, 
+  rgb(139, 22, 249), rgb(183, 175, 175), rgb(248, 248, 244) );
+  -webkit-background-clip: text;
+  animation: move 30s linear infinite;
+}
+@keyframes move {
+  100%{
+    background-position: 2000px 0;
+  }
+}
+
+.h1carro:hover {
+  color: blueviolet;
+  text-shadow: 0 0 10px rgb(132, 6, 250);
+  text-shadow: 0 0 20px rgb(132, 6, 250);
+  text-shadow: 0 0 40px rgb(132, 6, 250);
+  text-shadow: 0 0 80px rgb(132, 6, 250);
+  text-shadow: 0 0 160px rgb(132, 6, 250);
+  text-shadow: 0 0 320px rgb(132, 6, 250);
+}*/
+
+/* Estilos para el carrito de compras */
+.cart {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.cart h2 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.cart-items {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+.total-price {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: right;
+  margin-top: 20px;
+}
+
+/* Estilos para el botón de comprar */
+.btn-comprar {
+  background-color: blueviolet; /* mismo color que el filtrado */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.btn-comprar:hover {
+  background-color: #45a049; /* Verde oscuro */
+}
