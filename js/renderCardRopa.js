@@ -38,7 +38,6 @@ fetch('../db_ropa/db_ropa.json')
                     arrayFilter.push(prenda);
                 }
             }
-            console.log(arrayFilter);
             mostrarProductos(arrayFilter);
         });
     })
@@ -93,7 +92,5 @@ function mostrarProductos(dbRopa) {
 
         //Renderizado de elementos
         renderRopa.append(div);
-
     })
 };
-
