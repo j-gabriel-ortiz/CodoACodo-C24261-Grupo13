@@ -1,66 +1,74 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tienda de Ropa</title>
-    <link rel="shortcut icon" href="/Imagenes/logoPage.png">
+    <title>Carrito de Compras</title>
     <link rel="stylesheet" href="../css/index.css" />
-    <!--<link rel="stylesheet" href="../css/cardPrendas.css" />-->
-  </head>
-
-  <body>
+</head>
+<body>
     <header>
-      <div id="store-name">
-        <a class="logo" href="../index.html"
-          ><img src="../Imagenes/logoPage.png" alt="logo store" width="60"
-        /></a>
-        <h1>TIENDA GRUPO 3E</h1>
-      </div>
-
-      <nav class="navBar">
-        <ul class="menu">
-          <li class="indice"><a href="../index.html">Inicio</a></li>
-          <li class="menuRopa"><a href="../html/ropa.html">Ropa</a></li>
-          <li class="contact"><a href="../html/contacto.html">Contacto</a></li>
-          <li><a href="../html/carrito.html">Carrito</a></li>
-        </ul>
-      </nav>
+        <div id="store-name">
+            <a class="logo" href="../index.html">
+                <img src="../Imagenes/logoPage.png" alt="logo store" width="60"/>
+            </a>
+            <h1>TIENDA GRUPO 3E</h1>
+        </div>
+        <nav class="navBar">
+            <ul class="menu">
+                <li class="indice"><a href="../index.html">Inicio</a></li>
+                <li class="menuRopa"><a href="../html/ropa.html">Ropa</a></li>
+                <li class="contact"><a href="../html/contacto.html">Contacto</a></li>
+                <li><a href="../html/carrito.html">Carrito</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <div>
-      <h1 class="h1carro">Carrito de compras</h1>
-      <br>
-      <h2 class="h2carro">No has agregado nada al carrito</h2>
+    <div class="container">
+        <h1>Carrito de Compras</h1>
+        <div class="cart">
+            <h2>Productos en el Carrito</h2>
+            <ul class="cart-items">
+                <li class="cart-item">
+                    <span>Producto 1</span>
+                    <span>$10.00</span>
+                </li>
+                <li class="cart-item">
+                    <span>Producto 2</span>
+                    <span>$20.00</span>
+                </li>
+                <!-- Añade más productos aquí si es necesario -->
+            </ul>
+            <p class="total-price">Total: $30.00</p>
+            <p class="total-price">Total: $30.00</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
     </div>
+
     <footer class="main-footer">
-      <p class="main-footer p">
-        &copy; 2024 G.13
-        <a class="main-footer a" href="https://github.com/j-gabriel-ortiz/CodoACodo-C24261-Grupo13" target="_blank">Repositorio</a>
-      </p>
-      <div>
-        <ul class="social-list">
-          <li>
-            <a
-              href="https://www.instagram.com/tu_cuenta_de_instagram"
-              target="_blank"
-              ><img src="../Imagenes/instagram.svg" alt="Instagram"
-            /></a>
-          </li>
-          <li>
-            <a
-              href="https://www.facebook.com/tu_cuenta_de_facebook"
-              target="_blank"
-              ><img src="../Imagenes/facebook.svg" alt="Facebook"
-            /></a>
-          </li>
-          <li>
-            <a href="https://wa.me/tu_numero_de_whatsapp" target="_blank"
-              ><img src="../Imagenes/whatsapp.svg" alt="WhatsApp"
-            /></a>
-          </li>
-        </ul>
-      </div>
+        <p class="main-footer p">
+            &copy; 2024 G.13
+            <a class="main-footer a" href="https://github.com/j-gabriel-ortiz/CodoACodo-C24261-Grupo13" target="_blank">Repositorio</a>
+        </p>
+        <div>
+            <ul class="social-list">
+                <li>
+                    <a href="https://www.instagram.com/tu_cuenta_de_instagram" target="_blank">
+                        <img src="../Imagenes/instagram.svg" alt="Instagram"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/tu_cuenta_de_facebook" target="_blank">
+                        <img src="../Imagenes/facebook.svg" alt="Facebook"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://wa.me/tu_numero_de_whatsapp" target="_blank">
+                        <img src="../Imagenes/whatsapp.svg" alt="WhatsApp"/>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </footer>
-  </body>
+</body>
 </html>

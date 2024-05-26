@@ -568,7 +568,7 @@ footer .social-list img {
   font-size: 1rem;
 }
 
-.h1carro {
+/*.h1carro {
   text-align: center;
   font-size: 5rem;
   cursor: pointer;
@@ -594,7 +594,61 @@ footer .social-list img {
   text-shadow: 0 0 80px rgb(132, 6, 250);
   text-shadow: 0 0 160px rgb(132, 6, 250);
   text-shadow: 0 0 320px rgb(132, 6, 250);
-}
-.h2carro {
+}*/
 
+/* Estilos para el carrito de compras */
+.cart {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.cart h2 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.cart-items {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+.total-price {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: right;
+  margin-top: 20px;
+}
+
+/* Estilos para el botón de comprar */
+.btn-comprar {
+  background-color: blueviolet; /* mismo color que el filtrado */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.btn-comprar:hover {
+  background-color: #45a049; /* Verde oscuro */
 }
