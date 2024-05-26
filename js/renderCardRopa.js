@@ -92,24 +92,5 @@ function mostrarProductos(dbRopa) {
 
         //Renderizado de elementos
         renderRopa.append(div);
-
-        funcionlidadBotonAgregar();
-
     })
 };
-
-function funcionlidadBotonAgregar() {
-    botonesAgregar = document.querySelectorAll(".btn-agregar-producto");
-
-    botonesAgregar.forEach( boton => {
-        boton.addEventListener("click", agregarCarrito);
-    })
-}
-
-const carritoDeProductos = [];
-
-function agregarCarrito(e) {
-    const id = e.currentTarget.id
-    console.log(id)
-}
-
