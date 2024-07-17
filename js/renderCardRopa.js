@@ -4,14 +4,14 @@ const precioMinimo = document.getElementById("p-min");
 const precioMaximo = document.getElementById("p-max");
 const btnPrecio = document.getElementById("btn-buscar-precio");
 
-fetch('../db_ropa/db_ropa.json')
+fetch('https://gabrieljo.pythonanywhere.com/api/datos')
     .then(response => response.json())
     .then(contenido => {
         mostrarProductos(contenido)
     })
 
 function aplicarFiltros() {
-fetch('../db_ropa/db_ropa.json')
+fetch('https://gabrieljo.pythonanywhere.com/api/datos')
     .then(response => response.json())
     .then(contenido => {
         //Array con objetos filtrados
@@ -63,7 +63,8 @@ function mostrarProductos(dbRopa) {
 
         //Imagen
         const imgCard =  document.createElement('img');
-        imgCard.src = prenda.imagen
+        imgCard.src = prenda.img
+        imgCard.alt = prenda.prenda
         
         //Contenedor de detalles
         const detalleCard = document.createElement("div");
@@ -72,7 +73,7 @@ function mostrarProductos(dbRopa) {
         //Parrafos y boton
         const pTitulo = document.createElement('p');
         pTitulo.classList.add('titulo-producto');
-        pTitulo.textContent = prenda.title;
+        pTitulo.textContent = prenda.prenda;
 
         const pPrecio = document.createElement('p');
         pPrecio.classList.add('precio-producto');

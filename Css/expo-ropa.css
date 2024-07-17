@@ -1,0 +1,156 @@
+/* Carousel - Exp */
+
+.carousel-exp {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+  
+  .carousel-list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    justify-content: center;
+  }
+  
+  .carousel-track {
+    position: relative; 
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0 2.5%;
+  }
+  
+  .item-carousel {
+    box-sizing: border-box;
+    height: 100%;
+  }
+  
+  .item-carousel img {
+    object-fit: cover;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.8);
+    position: relative;
+  }
+  
+  #current {
+    transform: scale(1.2);
+    z-index: 2;
+  }
+  
+  #previus, #next {
+    transform: scale(1);
+    z-index: 1;
+  }
+  
+  #small-previus {
+    transform: scale(.8) translateX(20%);
+    z-index: 0;
+  }
+  
+  #small-next {
+    transform: scale(.8) translateX(-20%);
+    z-index: 0;
+  }
+
+
+  /* Ropa exclusiva */
+h2[class="mogra-regular"] {
+  color: white;
+  text-align: center;
+  text-shadow: 0 0 15px black;
+}
+
+#ropa-exclusiva {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  padding: 0 5px;
+}
+
+.card-img-top {
+  max-height: 250px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-size: 1rem;
+}
+  
+  
+  /* Responsive queries */
+  @media screen and (max-width: 1000px) {
+    .carousel-track {
+      padding: 0;
+      justify-content: center;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    #small-previus, #small-next {
+      display: none;
+    }
+  
+    .carousel-track {
+      justify-content: space-evenly;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    #current {
+      transform: scale(1);
+    }
+    
+    #previus {
+      transform: scale(.8) translate(20%);
+    }
+  
+    #next {
+      transform: scale(.8) translate(-20%);
+    }
+  
+    .carousel-track {
+      justify-content: center;
+    }
+  }
+  
+  @media screen and (max-width: 485px) {
+    .carousel-list {
+      height: 300px;
+    }
+    
+    #current {
+      transform: scale(.8);
+    }
+    
+    #previus {
+      transform: scale(.6) translate(50%);
+    }
+  
+    #next {
+      transform: scale(.6) translate(-50%);
+    }
+  
+  }
+  
+  @media screen and (max-width: 400px) {  
+    #previus {
+      transform: scale(.6) translate(70%);
+    }
+  
+    #next {
+      transform: scale(.6) translate(-70%); 
+    }
+  
+  }
