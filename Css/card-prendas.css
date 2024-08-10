@@ -1,0 +1,113 @@
+#renderRopa {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgb(231, 231, 231);
+    gap: 15px;
+    height: 100%;
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+/* Ajustes Card Boostrap */
+
+div[class='card'] {
+    width: 250px;
+    max-height: 350px;
+}
+
+img[class='card-img-top'] {
+    height: 200px;
+    object-fit: scale-down;
+    background-color: rgb(240,240,240);
+}
+
+.card-title {
+    font-size: 1.1rem;
+}
+
+/* Filtros */
+
+#container-ropa {
+    display: flex;
+    justify-content: center;
+}
+
+#filtros-ropa {
+    max-width: 250px;
+    width: 100%;
+    background-color: white;
+    padding: 5px;
+    font-size: 1.1rem;
+}
+
+.offcanvas-body {
+    display: flex;
+    flex-direction: column;
+}
+
+#filtros-ropa legend {
+    padding: 0 10px;
+}
+
+#tipo-ropa, #precio-ropa, #talle-ropa {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    padding: 10px;
+    gap: 10px;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+#tipo-ropa label, #precio-ropa label, #talle-ropa label{
+    position: relative;
+    left: 0;
+}
+
+#tipo-ropa input, #precio-ropa input, #talle-ropa input {
+    position: absolute;
+    right: 0px;
+}
+
+#tipo-ropa input, #talle-ropa input {
+    transform: translateY(25%);
+}
+
+#precio-ropa input {
+    width: 100px;
+}
+
+#precio-ropa button {
+    background-color: white;
+    border: 2px solid blueviolet;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 1050px) {
+    #renderRopa {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #container-ropa {
+        flex-direction: column;
+    }
+
+    #filtros-ropa {
+        max-width: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    header h1 {
+        height: 150px;
+        line-height: 150px;
+        font-size: 3.3rem;
+    }
+}

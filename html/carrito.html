@@ -13,13 +13,22 @@
 		<meta name="robots" content="index, nofollow" />
 		<title>Urban TG-13</title>
 		<link rel="shortcut icon" href="../imagenes/logo-tienda.jpg" />
+
+		<!-- Estilo General -->
 		<link rel="stylesheet" href="../css/layout.css" />
+        
+		<!-- CSS personalizado -->
+		<link rel="stylesheet" href="../css/card-carrito.css" />
+
+        <!-- Fuente para titulo -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Mogra&display=swap"
 			rel="stylesheet"
 		/>
+
+        <!-- Boostrap -->
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
 			rel="stylesheet"
@@ -79,8 +88,25 @@
 			</div>
 		</nav>
 
+		<div id="container-detalles-carrito">
+			<section id="render-items-carrito">
+			</section>
+			
+			<aside id="detalles-carrito">
+				<p id="titulo-detalle">Detalles del carrito</p>
+				<ul id="prendas-seleccionadas">
+				</ul>
+				<p id="monto-final">Total </p>
+				<div class="grupo-btn">
+					<button onclick="limpiarCarrito()">Limpiar Carrito</button>
+					<button>Enviar</button>
+				</div>
+			</aside>
+		</div>
+
 		<footer>
 			<p>&copy; 2024 Mi Tienda de Ropa</p>
 		</footer>
+		<script src="../js/renderCarrito.js"></script>
 	</body>
 </html>
