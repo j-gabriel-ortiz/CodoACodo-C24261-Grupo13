@@ -1,18 +1,7 @@
 // Renderizado de ropa
 const contenedorCards = document.getElementById('ropa-exclusiva')
 
-// const expoURL = 'https://gabrieljo.pythonanywhere.com/api/expo-ropa';
-// const ropaURL = 'https://gabrieljo.pythonanywhere.com/api/datos'
-
-// function conexionDB(URL) {
-//     return fetch(URL)
-//     .then(response => response.json())
-//     .then(contenido => {
-//         return contenido
-//     })    
-// }
-
-// Fetch expo carousel
+// Fetch ropa exclusiva
 fetch('https://gabrieljo.pythonanywhere.com/api/datos')
     .then(response => response.json())
     .then(contenido => {
@@ -45,7 +34,7 @@ function cardRopaExclusiva(dicRopa) {
     //Imagen
     const imgCard =  document.createElement('img');
     imgCard.classList.add('card-img-top');
-    imgCard.src = dicRopa.img;
+    imgCard.src = dicRopa.img.slice(1);
     imgCard.alt = dicRopa.prenda;
 
     // cuerpo del Card
