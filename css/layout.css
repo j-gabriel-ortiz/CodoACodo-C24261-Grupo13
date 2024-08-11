@@ -72,3 +72,13 @@ footer p {
     font-size: calc(2rem + 6.9vw);
   }
 }
+
+/* Formulario contacto */
+#form-contacto {
+  max-width: 600px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, .1);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 30px;
+}
